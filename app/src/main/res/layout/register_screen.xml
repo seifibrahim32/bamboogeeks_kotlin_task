@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/register_layout"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/title_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/registernow" />
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/title_reg"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="title_reg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hintText="Type"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/name"
+        app:layout_constraintBottom_toBottomOf="name">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hintText="Type"
+            android:inputType="password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/confirm_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="title_reg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hintText="Type"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/confirm_pass"
+        app:layout_constraintBottom_toBottomOf="@id/confirm_pass">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hintText="Type"
+            android:inputType="password" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_below="@+id/age"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="261dp"
+        android:layout_marginBottom="495dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="REGISTER" />
+</RelativeLayout>

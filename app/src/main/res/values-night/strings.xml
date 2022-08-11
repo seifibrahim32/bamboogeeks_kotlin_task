@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KotlinDemo</string>
+    <string name="some_text">some text…</string>
+    <string name="button">DO</string>
+    <string name="name">Name</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+</resources>
